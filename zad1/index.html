@@ -7,24 +7,41 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Zadanie 1</h1>
-    <p><b>1. Element video z możliwością kontroli</b></p>
-    <video width="30%" height="16%" controls>
-      <source src="movie.mp4" type="video/mp4">
-      <source src="movie.ogg" type="video/ogg">
-   		Your browser does not support the video tag.
-  	</video>
-     <p><b>2. Element video z atrybutem autoplay (format ten jest jednak automatycznie blokowany przez przeglądarki)</b></p>
-    <video width="30%" height="16%" autoplay>
-      <source src="movie.mp4" type="video/mp4">
-      <source src="movie.ogg" type="video/ogg">
-   		Your browser does not support the video tag.
-  	</video>
-     <p><b>3. Element video z atrybutem autoplay z wyciszonym wideo</b></p>
-    <video width="30%" height="16%" autoplay muted>
-      <source src="movie.mp4" type="video/mp4">
-      <source src="movie.ogg" type="video/ogg">
-   		Your browser does not support the video tag.
-  	</video>
+    <div class="container my-5">
+      <h1>Zadanie 1</h1>
+
+      <!-- Sekcja 1 -->
+      <div class="mb-4 p-3 border rounded bg-light">
+        <h2>1. Element video z możliwością kontroli</h2>
+        <video class="w-100" controls>
+          <source src="movie.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Sekcja 2 -->
+      <div class="mb-4 p-3 border rounded bg-light">
+        <h2>2. Element video z atrybutem autoplay</h2>
+        <p>(Uwaga: autoplay z dźwiękiem może być blokowany przez przeglądarki.)</p>
+        <video class="w-100" autoplay>
+          <source src="movie.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Sekcja 3 -->
+      <div class="mb-4 p-3 border rounded bg-light">
+        <h2>3. Element video z atrybutem autoplay i wyciszeniem</h2>
+        <video class="w-100" autoplay muted>
+          <source src="movie.mp4" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-wX6VFBHeAGLd1B5peMSJrCJ6lGUwQj+47BduV/iSRp4zCGTVQ6S7RBiU1nQ0VEI+5" crossorigin="anonymous"></script>
   </body>
 </html>
